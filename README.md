@@ -4,7 +4,7 @@
 <!-- © 2021 AvishkarPatil -->
 
 <h4 align='center'>📺 The PHP Script For Grabb Streaming Links and Play it , This Workes Only on Indian Server and LocalHost [ VPS ] due to Geo-restrictions<br><br>🌟 Start This Repositry Befor Copying 😎<br>angry Don't Remove Credits
-Don't Edit This Script smiling_imp
+Don't Edit This Script 
 <br><br>Put Your Own SsoToken and Other Details In This Script</h4>
 <br>
 
@@ -29,7 +29,7 @@ Don't Edit This Script smiling_imp
 
 ```
 
-• Download this ZIP File From [Here](https://github.com/avipatilpro/JioTV/blob/main/token.php)<br>
+• Download this ZIP File From [Here](https://github.com/avipatilpro/JioTV/releases/download/2.0/JioTV.zip)<br>
 • Extract in the on Mobile in htdocs Folder <br>
 • Start Localhost Server and Go To localhost:8080/login.php <br>
 • Put Jio Login Details and Submit <br>
@@ -43,7 +43,7 @@ Don't Edit This Script smiling_imp
 https://www.apachefriends.org/index.html
 
 ```
-• Download Given ZIP and Extract in htdocs Folder<br>
+• Download Given [ZIP](https://github.com/avipatilpro/JioTV/releases/download/2.0/JioTV.zip) and Extract in htdocs Folder<br>
 • Open localhost/login.php <br>
 • Put Jio Login Details and Submit <br>
 • Go Back To Home and Enjoy !
