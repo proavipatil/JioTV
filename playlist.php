@@ -4,8 +4,8 @@
 // © @AvishkarPatil  | https://github.com/avipatilpro
 
 header("Content-Type: application/vnd.apple.mpegurl");
-echo '#EXTM3U' . PHP_EOL;
 echo '#EXTM3U x-tvg-url="https://github.com/mitthu786/tvepg/releases/download/latest/epg.xml.gz"' . PHP_EOL;
+echo "<br>" . PHP_EOL;
 $json = json_decode(file_get_contents('data/channels.json') , true);
 $LANG_MAP = array(
     6 => "English",
@@ -42,7 +42,11 @@ $GENRE_MAP = array(
 );
 foreach ($json['result'] as $channel)
 {
+    $target = $channel['logoUrl'];
+    $targetnew = trim($target,".png");
     printf("#EXTINF:-1 tvg-id=\"%u\" group-title=\"%s\" tvg-language=\"%s\" tvg-logo=\"https://jiotv.catchup.cdn.jio.com/dare_images/images/%s\",%s" . PHP_EOL, $channel['channel_id'], $GENRE_MAP[$channel['channelCategoryId']], $LANG_MAP[$channel['channelLanguageId']], $channel['logoUrl'], $channel['channel_name']);
-    printf("http://%s/JioTV/autoq.php?c=%s" . PHP_EOL . PHP_EOL, $_SERVER['HTTP_HOST'], $channel['target']);
+    echo "<br>" . PHP_EOL;
+    printf("http://%s/JioTV/autoq.php?c=%s" . PHP_EOL . PHP_EOL, $_SERVER['HTTP_HOST'], $targetnew);
+    echo "<br>" . PHP_EOL;
 }
 
