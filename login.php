@@ -65,7 +65,9 @@ if ($k != "")
     file_put_contents("data/auth.json", $result);
     $succ = "Login Successful !";
 }
-
+else {
+    $succ = "WRONG PHONE NO. OR PASSWORDS.<br> PLEASE TRY AGAIN.";
+}
 
 ?>
 
